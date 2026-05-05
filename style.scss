@@ -250,7 +250,8 @@
              align-items: center;
              justify-content: center;
              color: variables.$color1;
-             margin: variables.$size5;
+             margin: variables.$size4;
+             box-shadow: rgba(255, 255, 255, 0.35) 0px 5px 15px;
 
              p {
                font-family: variables.$font_family1;
