@@ -1,31 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="../assets/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact</title>
-    <link rel="stylesheet" href="style.css">
-  </head>
-  <body>
-    <div id="app">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="../assets/vite.svg" class="logo" alt="Vite logo" />
-        </a>
-        <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank">
-          <img src="../assets/javascript.svg" class="logo vanilla" alt="JavaScript logo" />
-        </a>
-        <h1>Contact !</h1>
-        <a href="../">Go to home</a>
-        <div class="card">
-          <button id="counter" type="button">Counter 0</button>
-        </div>
-        <p class="read-the-docs">
-          Click on the Vite logo to learn more
-        </p>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="../assets/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon" />
+  <link rel="stylesheet" href="style.scss">
+</head>
+
+<body>
+  <header>
+    <a href="../index.html">
+      <span class="material-symbols-outlined">
+        reply
+      </span>
+    </a>
+  </header>
+  <main>
+    <div class="contact-formulaire">
     </div>
-    <script type="module" src="./contact.js"></script>
-  </body>
+  </main>
+  <footer>
+    <div class="blocs">
+      <h2>ADRESSE</h2>
+      <p>Rue de Frémis 31, CH-1241, Puplinge, Suisse
+      </p>
+    </div>
+    <div class="blocs left">
+      <h2>CORDONNEE</h2>
+    </div>
+  </footer>
+  <script type="module" src="./contact.js"></script>
+</body>
+
 </html>
