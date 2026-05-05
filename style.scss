@@ -1,0 +1,319 @@
+// import les variables
+@use 'variables';
+
+/*======================================================
+  body
+======================================================*/
+body {
+  width: 100%;
+  height: 100%;
+
+  /*======================================================
+    header
+  ======================================================*/
+  header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+
+    nav {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+
+      .list-nav {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        padding: variables.$size3;
+
+        .el-nav {
+          font-family: variables.$font_family1;
+
+          a {
+            list-style: none;
+            text-decoration: none;
+            color: variables.$color1;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    #hero {
+      width: 100%;
+      height: 100vh;
+      background-color: variables.$color2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: variables.$size3;
+
+      h1 {
+        color: variables.$color1;
+        font-family: variables.$font_family1;
+        font-size: variables.$size4;
+      }
+
+      p {
+        color: variables.$color1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-family: variables.$font_family2;
+        gap: variables.$size1;
+        font-size: variables.$size1;
+        letter-spacing: 1px;
+
+        span {
+          padding-top: variables.$size1;
+          border-top: 1px solid variables.$color1
+        }
+      }
+
+      .arrow-btm {
+        color: variables.$color1;
+        position: absolute;
+        bottom: 30px;
+        font-size: variables.$size3;
+      }
+    }
+
+    #who {
+      width: 100%;
+      height: 100vh;
+
+      #who_professionel {
+        width: 100%;
+        height: 100%;
+        background-image: url(./images/emma-rose_perso.png);
+        background-size: cover;
+        background-position: center;
+
+        .opacity {
+          width: 100%;
+          height: 100%;
+          background-color: variables.$color3;
+          padding: variables.$size5 variables.$size3;
+          box-sizing: border-box;
+
+          div {
+            width: 100%;
+            height: min-content;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: variables.$size3;
+
+            h2 {
+              width: 100%;
+              height: 100%;
+              color: variables.$color1;
+              font-size: variables.$size4;
+              font-family: variables.$font_family2;
+            }
+
+            ul {
+              width: 100%;
+              height: 100%;
+              color: variables.$color1;
+              font-family: variables.$font_family1;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: variables.$size2;
+              padding-left: variables.$size4;
+              box-sizing: border-box;
+
+              li {
+                width: 100%;
+                line-height: 1.5;
+                letter-spacing: 1px;
+              }
+            }
+          }
+        }
+      }
+
+      #who_personnel {
+        width: 100%;
+        height: 100%;
+        background-image: url(./images/emma-rose_handball.png);
+        background-size: cover;
+        background-position: center;
+
+        .opacity {
+          width: 100%;
+          height: 100%;
+          background-color: variables.$color3;
+          padding: variables.$size5 variables.$size3;
+          box-sizing: border-box;
+
+          div {
+            width: 100%;
+            height: min-content;
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            justify-content: center;
+            gap: variables.$size3;
+
+            h2 {
+              width: 100%;
+              height: 100%;
+              color: variables.$color1;
+              font-size: variables.$size4;
+              font-family: variables.$font_family2;
+              text-align: end;
+            }
+
+            ul {
+              width: 100%;
+              height: 100%;
+              color: variables.$color1;
+              font-family: variables.$font_family1;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              gap: variables.$size2;
+              padding-right: variables.$size4;
+              box-sizing: border-box;
+
+              li {
+                width: 100%;
+                text-align: end;
+                line-height: 1.5;
+                letter-spacing: 1px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    #project {
+      width: 100%;
+      height: 100vh;
+      background-color: variables.$color2;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      h2 {
+        color: variables.$color1;
+        font-size: variables.$size4;
+        padding: variables.$size5 variables.$size4;
+        box-sizing: border-box;
+        font-family: variables.$font_family2;
+        text-align: center;
+      }
+
+      .carousel {
+        width: 100%;
+        height: 100%;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-sizing: border-box;
+        padding: 0 variables.$size5 variables.$size5 variables.$size5;
+
+        ul {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+
+          .carousel-el {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            color: variables.$color1;
+            margin: variables.$size4;
+
+            p {
+              font-family: variables.$font_family1;
+              padding: variables.$size3;
+            }
+
+            .element {
+              width: 100%;
+              height: 100%;
+              flex: 1;
+
+              a {
+                width: 300px;
+                height: 400px;
+
+                .codepicture {
+                  width: 100%;
+                  height: 100%;
+                  background-image: url(./images/emmarose_code.jpg);
+                  background-position: center;
+                  border-radius: 20px;
+                  background-size: cover;
+                }
+
+                .photopicture {
+                  width: 100%;
+                  height: 100%;
+                  background-image: url(./images/photo.jpg);
+                  background-position: center;
+                  background-size: cover;
+                  border-radius: 20px;
+                }
+
+                .dessinpicture {
+                  width: 100%;
+                  height: 100%;
+                  background-image: url(./images/dessin.jpg);
+                  background-position: center;
+                  background-size: cover;
+                  border-radius: 20px;
+                }
+
+                .designpicture {
+                  width: 100%;
+                  height: 100%;
+                  background-image: url(./images/emmarose_code.jpg);
+                  background-position: center;
+                  background-size: cover;
+                  border-radius: 20px;
+                }
+
+                .dpicture {
+                  width: 100%;
+                  height: 100%;
+                  background-image: url(./images/projet_3d.jpg);
+                  background-position: center;
+                  background-size: cover;
+                  border-radius: 20px;
+                }
+              }
+            }
+          }
+        }
+
+        .button{
+          color: variables.$color1;
+        }
+      }
+    }
+  }
+}
