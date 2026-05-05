@@ -1,4 +1,4 @@
-// import les variables
+ // import les variables
 @use 'variables';
 
 /*======================================================
@@ -76,6 +76,7 @@ body {
         gap: variables.$size1;
         font-size: variables.$size1;
         letter-spacing: 1px;
+        text-align: center;
 
         span {
           padding-top: variables.$size1;
