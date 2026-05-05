@@ -24,8 +24,12 @@ var swipertwo = new Swiper(".swiper-two", {
         modifier: 1,
         slideShadows: true,
     },
-      navigation: {
+    navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
-      },
+    },
+    autoplay: {
+        delay: 6000,
+        disableOnInteraction: false,
+    },
 });
