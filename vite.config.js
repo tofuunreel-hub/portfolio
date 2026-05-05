@@ -9,7 +9,7 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         contact: resolve(__dirname, 'contact/index.html'),
-        js: resolve(__dirname, 'assets/main.js')
+        js: resolve(__dirname, 'main.js')
       }
     }
   }
