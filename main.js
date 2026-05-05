@@ -30,6 +30,5 @@ var swipertwo = new Swiper(".swiper-two", {
     },
     autoplay: {
         delay: 6000,
-        disableOnInteraction: false,
     },
 });
