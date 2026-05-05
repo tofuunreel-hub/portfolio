@@ -251,7 +251,6 @@
              justify-content: center;
              color: variables.$color1;
              margin: variables.$size4;
-             box-shadow: rgba(255, 255, 255, 0.607) 0px 5px 15px;
              border-radius: 20px;
 
              p {
@@ -275,6 +274,8 @@
                    background-position: center;
                    border-radius: 20px;
                    background-size: cover;
+                   box-shadow: rgba(255, 255, 255, 0.607) 0px 5px 15px;
+
                  }
 
                  .photopicture {
@@ -284,6 +285,8 @@
                    background-position: center;
                    background-size: cover;
                    border-radius: 20px;
+                   box-shadow: rgba(255, 255, 255, 0.607) 0px 5px 15px;
+
                  }
 
                  .dessinpicture {
@@ -293,6 +296,8 @@
                    background-position: center;
                    background-size: cover;
                    border-radius: 20px;
+                   box-shadow: rgba(255, 255, 255, 0.607) 0px 5px 15px;
+
                  }
 
                  .designpicture {
@@ -302,6 +307,8 @@
                    background-position: center;
                    background-size: cover;
                    border-radius: 20px;
+                   box-shadow: rgba(255, 255, 255, 0.607) 0px 5px 15px;
+
                  }
 
                  .dpicture {
@@ -311,6 +318,8 @@
                    background-position: center;
                    background-size: cover;
                    border-radius: 20px;
+                   box-shadow: rgba(255, 255, 255, 0.607) 0px 5px 15px;
+
                  }
                }
              }
