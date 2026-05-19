@@ -3,7 +3,7 @@
 ======================================*/
 @font-face {
     font-family: 'open_dyslexic';
-    src: local('open_dyslexic'), url(./font/open_dyslexic/OpenDyslexic-Regular.otf);
+    src: local('open_dyslexic'), url(../font/open_dyslexic/OpenDyslexic-Regular.otf);
 }
 
 /*======================================
@@ -12,15 +12,11 @@
 $font_family1: 'open_dyslexic';
 $font_family2: 'helvetica';
 $color1: white;
+$color3: rgba(255, 255, 255, 0.457);
 $color: #020024;
-$color2: linear-gradient(145deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
-$color3: rgba(0, 0, 0, 0.466);
-$color4: black;
-$color6: rgba(255, 255, 255, 0.413);
-$size: 5px;
+$color4: linear-gradient(145deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+$size: 10px;
 $size1: 15px;
 $size2: 20px;
 $size3: 30px;
 $size4: 40px;
-$size5: 60px;
-$size6: 100px;

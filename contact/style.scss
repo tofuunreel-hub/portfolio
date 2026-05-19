@@ -8,20 +8,27 @@ body {
   width: 100%;
   height: 100vh;
 
-  header {
+  .return {
     position: absolute;
     top: 10px;
     left: 10px;
 
+
     a {
       color: variables.$color1;
     }
+
+    &:hover {
+      transform: scale(1.1);
+    }
   }
+
 
   main {
     width: 100%;
     height: 100%;
-    background-color: variables.$color2;
+    background: variables.$color;
+    background: variables.$color4;
     display: flex;
     align-items: start;
     justify-content: center;
@@ -30,36 +37,231 @@ body {
 
     .contact-formulaire {
       width: 100%;
-      height: 400px;
+      height: 600px;
       box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(255, 255, 255, 0.12) 0px 4px 6px, rgba(255, 255, 255, 0.17) 0px 12px 13px, rgba(255, 255, 255, 0.09) 0px -3px 5px;
       border-radius: 20px;
+      background-color: variables.$color6;
+
+      form {
+        width: 100%;
+        height: 100%;
+        padding: variables.$size1;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        color: variables.$color1;
+
+        .obligation {
+          color: variables.$color7;
+          font-size: variables.$size2;
+        }
+
+        h1 {
+          font-weight: bolder;
+          font-family: variables.$font_family1;
+          font-size: variables.$size3;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100%;
+        }
+
+        .info-form {
+          height: 100%;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          gap: variables.$size2;
+          padding: variables.$size1;
+          box-sizing: border-box;
+
+
+          .civility-info {
+            height: max-content;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: variables.$size;
+
+            h2 {
+              font-family: variables.$font_family2;
+              font-weight: bolder;
+            }
+
+            div {
+
+              input,
+              label {
+                cursor: pointer;
+              }
+            }
+          }
+
+          .info {
+            position: relative;
+            width: 100%;
+            height: 100%;
+
+            label {
+              position: absolute;
+              top: -10px;
+              left: 20px;
+              font-weight: bolder;
+              font-family: variables.$font_family2;
+              background-color: variables.$color6;
+              padding: 0 variables.$size;
+
+              .obligation {
+                color: variables.$color7;
+              }
+            }
+
+            input,
+            textarea {
+              width: 100%;
+              height: 100%;
+              background: none;
+              border: 1px solid variables.$color1;
+              border-radius: 20px;
+              color: variables.$color1;
+              font-family: variables.$font_family2;
+              padding: variables.$size;
+              box-sizing: border-box;
+            }
+          }
+
+          .name-info {
+            height: 100px;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            gap: variables.$size1;
+          }
+
+          .email-info {
+            height: 100px;
+          }
+
+          .legal {
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            p {
+              font-family: variables.$font_family2;
+              font-size: variables.$size;
+
+              a {
+                color: variables.$color1;
+              }
+            }
+          }
+
+          .info-button {
+            padding-bottom: variables.$size1;
+            display: flex;
+            justify-content: end;
+
+            button {
+              background-color: variables.$color5;
+              border: 0;
+              color: variables.$color1;
+              padding: variables.$size variables.$size1;
+              font-family: variables.$font_family1;
+              border-radius: 20px;
+              cursor: pointer;
+
+              &:hover {
+                transform: scale(1.1);
+              }
+            }
+          }
+        }
+      }
     }
   }
 
   footer {
     width: 100%;
-    height: 150px;
+    height: min-content;
     position: absolute;
     bottom: 0;
     color: variables.$color1;
     padding: variables.$size2;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    gap: variables.$size1;
 
-    .blocs {
-      width: 100%;
+    .row-info {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: start;
       height: 100%;
 
-      h2 {
-        font-weight: bolder;
-        font-family: variables.$font_family1;
+
+      .blocs {
+        width: max-content;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        gap: variables.$size1;
+
+        h2 {
+          font-weight: bolder;
+          font-family: variables.$font_family1;
+          font-size: variables.$size1;
+        }
+
+        .info-cordonnee {
+          display: flex;
+          flex-direction: column;
+          gap: variables.$size;
+        }
+
+        p {
+          width: 200px;
+        }
+
+        a {
+          width: 100%;
+        }
+
+        p,
+        a {
+          font-family: variables.$font_family2;
+          color: variables.$color3;
+          font-weight: bolder;
+          text-decoration: none;
+          font-size: variables.$size;
+        }
       }
+
+      .left {
+        text-align: end;
+        flex: 2;
+      }
+
     }
 
-    .left {
-      text-align: end;
+    .mention-legal {
+      width: 100%;
+      text-align: center;
+      box-sizing: border-box;
+      color: variables.$color3;
+      font-size: variables.$size;
+      font-family: variables.$font_family2;
+
+      a {
+        color: variables.$color3;
+      }
     }
   }
 }

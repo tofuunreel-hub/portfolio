@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8" />
@@ -13,26 +13,73 @@
 </head>
 
 <body>
-  <header>
+  <div class="return">
     <a href="../index.html">
       <span class="material-symbols-outlined">
         reply
       </span>
     </a>
-  </header>
+  </div>
   <main>
     <div class="contact-formulaire">
+      <form action="../page_attente.html">
+        <h1>CONTACT</h1>
+        <div class="info-form">
+          <div class="civility-info">
+            <h2>Civilité</h2>
+            <div>
+              <input type="radio" id="woman" name="civility">
+              <label for="woman">Femme</label>
+              <input type="radio" id="man" name="civility">
+              <label for="man">Homme</label>
+            </div>
+          </div>
+          <div class="name-info">
+            <div class="info">
+              <label for="lastname">Nom<span class="obligation">*</span></label>
+              <input type="text" id="lastname" required>
+            </div>
+            <div class="info">
+              <label for="firstname">Prénom<span class="obligation">*</span></label>
+              <input type="text" id="firstname" required>
+            </div>
+          </div>
+          <div class="info email-info">
+            <label for="email">email<span class="obligation">*</span></label>
+            <input type="email" id="email" required>
+          </div>
+          <div class="info">
+            <label for="message">Message<span class="obligation">*</span></label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div class="legal">
+            <input type="checkbox" required>
+            <p><span class="obligation">*</span> Accepte les condition de <a href="../legal/politique_confidentialite.html" target="_blank">Politique de confidentialité</a> & <a href="../legal/cgu.html" target="_blank">CGU</a></p>
+          </div>
+          <div class="info-button">
+            <button type="submit">Envoyer</button>
+          </div>
+        </div>
+      </form>
     </div>
   </main>
   <footer>
-    <div class="blocs">
-      <h2>ADRESSE</h2>
-      <p>Rue de Frémis 31, CH-1241, Puplinge, Suisse
-      </p>
+    <div class="row-info">
+      <div class="blocs">
+        <h2>ADRESSE</h2>
+        <p>CH-1241 Puplinge, Genève</p>
+      </div>
+      <div class="blocs left">
+        <h2>CORDONNEE</h2>
+        <div class="info-cordonnee">
+          <a href="tel:+41774622694">+41(0) 77 462 26 94</a>
+          <a href="mailto:ersoubeste@bluewin.ch">ersoubeste@bluewin.ch</a>
+          <a href="mailto:emmarose.soubeste@crea-inseec.com">emmarose.soubeste@crea-inseec.com</a>
+          <a href="mailto:ers@ik.me">ers@ik.me</a>
+        </div>
+      </div>
     </div>
-    <div class="blocs left">
-      <h2>CORDONNEE</h2>
-    </div>
+    <p class="mention-legal">&#9426; 2026 Emma-Rose Soubeste - <a href="../legal/politique_confidentialite.html" target="_blank">Politique de confidentialité</a> et <a href="../legal/cgu.html" target="_blank">CGU</a></p>
   </footer>
   <script type="module" src="./contact.js"></script>
 </body>

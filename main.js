@@ -1,3 +1,20 @@
+// Boutton burger
+const burgerButton = document.querySelector('.burger-contact');
+const closeButton = document.querySelector('.close-contact');
+const infoContact = document.querySelector('.info-contact');
+
+burgerButton.addEventListener('click', () => {
+    closeButton.classList.add('select');
+    burgerButton.classList.remove('select');
+    infoContact.classList.add('activ');
+})
+
+closeButton.addEventListener('click', () => {
+    burgerButton.classList.add('select');
+    closeButton.classList.remove('select');
+    infoContact.classList.remove('activ');
+})
+
 // carousel information étude/personnel
 var swiper = new Swiper(".mySwiper", {
     centeredSlides: true,

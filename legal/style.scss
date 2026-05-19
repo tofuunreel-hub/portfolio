@@ -1,0 +1,80 @@
+// import les variables
+@use 'variables';
+
+/*======================================================
+  body
+======================================================*/
+body {
+    width: 100%;
+    height: 100vh;
+
+    section {
+        width: 100%;
+        height: 100%;
+        background: variables.$color;
+        background: variables.$color4;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .title {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            flex: 1;
+
+
+            h1 {
+                font-family: variables.$font_family1;
+                font-size: variables.$size4;
+                color: variables.$color1;
+                width: 100%;
+                text-align: center;
+            }
+
+            p {
+                font-family: variables.$font_family2;
+                font-size: variables.$size2;
+                color: variables.$color3;
+                width: 100%;
+                text-align: center;
+            }
+
+        }
+
+        .bloc-info {
+            width: 100%;
+            height: 100%;
+            flex: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: variables.$size3;
+
+            .info {
+                width: 80%;
+                color: variables.$color1;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: variables.$size;
+
+                h2 {
+                    width: 100%;
+                    font-family: variables.$font_family1;
+                    font-size: variables.$size2;
+                }
+
+                p {
+                    width: 80%;
+                    font-family: variables.$font_family2;
+                    font-size: variables.$size1;
+                    line-height: variables.$size2;
+                }
+            }
+        }
+    }
+}
