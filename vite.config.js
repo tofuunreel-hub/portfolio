@@ -9,7 +9,8 @@ export default defineConfig({
       input: {
         main: resolve(__dirname, 'index.html'),
         contact: resolve(__dirname, 'contact/index.html'),
-        js: resolve(__dirname, 'main.js')
+        js: resolve(__dirname, 'main.js'),
+        attente: resolve(__dirname, 'pageattente.html')
       }
     }
   }
